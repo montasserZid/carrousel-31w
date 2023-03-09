@@ -34,14 +34,7 @@
 .carrousel__figure {
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.5s;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
 }
 
 /* le conteneur des boutons radio */
@@ -56,3 +49,16 @@
   align-items: center;
   z-index: 100;
 }
+
+.carrousel__img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.carrousel__img--active{}
