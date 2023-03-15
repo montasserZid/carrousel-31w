@@ -3,13 +3,21 @@
 /* Le conteneur principale du carrousel */
 .carrousel {
   position: fixed;
-  width: 50%;
-  height: 50%;
+  width: 100vh;
+  height: 100vh;
   top: 25%;
   left: 25%;
   transform: scale(0);
   transition: transform 0.5s;
   background-color: aquamarine;
+}
+@media screen and (min-width: 500px) {
+  .carrousel {
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+  }
 }
 
 .carrousel--ouvrir {
@@ -17,6 +25,18 @@
 }
 
 /* bouton de fermeture de la boîte modale */
+.bouton__x {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+}
+
 /* conteneur des images du carrousel */
 .carrousel__figure {
   width: 100%;
